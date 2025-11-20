@@ -20,7 +20,7 @@ export default function SnakeGame() {
   const [gameOver, setGameOver] = useState(false);
 
   function generateFood(exclude: { x: number; y: number }[]) {
-    let newFood;
+    let newFood: { x: number; y: number };
     while (true) {
       newFood = {
         x: Math.floor(Math.random() * (canvasSize / cellSize)),
